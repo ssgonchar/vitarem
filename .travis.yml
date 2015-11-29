@@ -8,8 +8,7 @@ php:
   - 5.6
 
 before_script:
-  - /home/travis/.phpenv/versions/5.3.3/bin/composer self-update
+  - composer install --prefer-source
 
 script:
-  - phpunit --configuration phpunit.xml.dist
-  - vendor/bin/phpcs --standard=PSR2 bin/src/ tests/
+  - phpunit --coverage-text
