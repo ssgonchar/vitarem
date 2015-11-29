@@ -51,11 +51,11 @@ class ChatConnection implements ChatConnectionInterface
      */
     public function sendMsg($sender, $msg)
     {
-        $this->send([
+        $this->send(array(
             'action'   => 'message',
             'username' => $sender,
             'msg'      => $msg
-        ]);
+        ));
     }
 
     /**
@@ -82,22 +82,22 @@ class ChatConnection implements ChatConnectionInterface
         // Check if the name exists already
         if ($this->repository->getClientByName($name) !== null)
         {
-            $this->send([
+            $this->send(array(
                 'action'   => 'setname',
                 'success'  => false,
                 'username' => $this->name
-            ]);
+            ));
 
             return;
         }
 
         $this->name = $name;
 
-        $this->send([
+        $this->send(array(
             'action'   => 'setname',
             'success'  => true,
             'username' => $this->name
-        ]);
+        ));
     }
 
     /**
