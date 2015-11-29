@@ -1,11 +1,44 @@
 {
+  "name": "vitarem/chat",
+  "description": "A small, realtime chat",
+  "type": "library",
+  "license": "MIT",
+  "keywords": [
+    "chat",
+    "vita rem",
+    "real-time"
+  ],
+  "authors": [
+    {
+      "name": "Sergey Gonchar",
+      "email": "fingercrew2@gmail.com"
+    }
+  ],
   "require": {
+    "php": ">=5.3.3",
+    "ext-curl": "*",
     "cboden/ratchet": "^0.3.3",
     "guzzle/guzzle": "^3.9"
+  },
+  "require-dev": {
+    "ext-phar": "*",
+    "ext-pdo": "*",
+    "cboden/ratchet": "^0.3.3",
+    "phpunit/phpunit": "~4.0",
+    "squizlabs/php_codesniffer": "~2.0",
+    "athletic/athletic": "~0.1.8"
   },
   "autoload": {
     "psr-4": {
       "Chat\\": "bin/src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Chat\\Tests\\Unit\\": "tests/unit/",
+      "Chat\\Tests\\Unit\\Socket\\": "tests/unit/sockets/",
+      "Chat\\Tests\\Unit\\Socket\\Connection\\": "tests/unit/sockets/Connection/",
+      "Chat\\Tests\\Unit\\Socket\\Repository\\": "tests/unit/sockets/Repository/"
     }
   }
 }
