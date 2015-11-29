@@ -1,6 +1,7 @@
 # Vita Rem
 
-Real time platform for web app
+Platform for real-time web applications. 
+[Read more](http://ssgonchar.github.io/vitarem/)
 
 ## Installation instruction
 
