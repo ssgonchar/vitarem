@@ -15,4 +15,3 @@ script:
   - if [ $TRAVIS_PHP_VERSION = '5.3.3' ]; then phpunit; fi
   - if [ $TRAVIS_PHP_VERSION != '5.3.3' ]; then ./vendor/bin/phpunit $PHPUNIT_FLAGS; fi
   - if [ $TRAVIS_PHP_VERSION != '5.3.3' ]; then ./vendor/bin/phpcs --standard=PSR2 ./bin/src/ ./tests/; fi
-  - if [[ $TRAVIS_PHP_VERSION != '5.3.3' && $TRAVIS_PHP_VERSION != '5.4.29' && $TRAVIS_PHP_VERSION != '5.5.13' ]]; fi
