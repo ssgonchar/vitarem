@@ -1,6 +1,8 @@
 <?php
 
-namespace Chat\Tests;
+namespace Chat\Tests\Unit\Socket;
+
+use Chat\Chat;
 
 /**
  * Created by PhpStorm.
@@ -9,13 +11,16 @@ namespace Chat\Tests;
  * Time: 6:44
  */
 
-class ChatTest extends BaseTest
+class ChatTest extends \Chat\Tests\Unit\Socket\Base
 {
+    /**
+     *
+     */
     public function testInitChat( )
     {
-        $chat = new \Chat\Chat();
+        $chat = new Chat();
 
-        $this->assertClassHasAttribute( 'repository', 'Chat');
-        $this->assertInstanceOf('ChatRepository', $chat);
+        $this->assertClassHasAttribute( 'repository', '\Chat\Chat');
+        $this->assertInstanceOf('\Chat\Chat', $chat);
     }
 }

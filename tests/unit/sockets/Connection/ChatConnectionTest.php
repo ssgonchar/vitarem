@@ -1,6 +1,6 @@
 <?php
 
-namespace Chat\Tests;
+namespace Chat\Tests\Unit\Socket\Connection;
 
 /**
  * Created by PhpStorm.
@@ -8,7 +8,7 @@ namespace Chat\Tests;
  * Date: 29.11.2015
  * Time: 6:44
  */
-class ChatConnectionTest extends BaseTest
+class ChatConnectionTest extends \Chat\Tests\Unit\Socket\Base
 {
 
 }

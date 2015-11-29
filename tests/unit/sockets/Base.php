@@ -1,5 +1,5 @@
 <?php
-namespace Chat\Tests;
+namespace Chat\Tests\Unit\Socket;
 
 use Chat\Repository\ChatRepositoryInterface;
 use Chat\Repository\ChatRepository;
@@ -10,7 +10,7 @@ use Chat\Repository\ChatRepository;
  * Date: 29.11.2015
  * Time: 6:45
  */
-class BaseTest extends \PHPUnit_Framework_TestCase
+class Base extends \PHPUnit_Framework_TestCase
 {
     protected $repository;
 
