@@ -1,6 +1,9 @@
 <?php
 
 namespace Chat\Tests\Unit\Socket\Repository;
+use Chat\Connection\ChatConnection;
+use Chat\Repository\ChatRepository;
+use Ratchet\ConnectionInterface;
 
 /**
  * Created by PhpStorm.
@@ -11,4 +14,11 @@ namespace Chat\Tests\Unit\Socket\Repository;
 class ChatRepositoryTest extends \Chat\Tests\Unit\Socket\Base
 {
 
+    public function testAddUser()
+    {
+        $repository = new ChatRepository();
+
+        $this->assertClassHasAttribute( 'clients', '\Chat\Repository\ChatRepository');
+        $this->assertInstanceOf('\Chat\Repository\ChatRepository', $repository);
+    }
 }

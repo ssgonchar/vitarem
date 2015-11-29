@@ -21,9 +21,6 @@
     "guzzle/guzzle": "^3.9"
   },
   "require-dev": {
-    "ext-phar": "*",
-    "ext-pdo": "*",
-    "cboden/ratchet": "^0.3.3",
     "phpunit/phpunit": "~4.0",
     "squizlabs/php_codesniffer": "~2.0",
     "athletic/athletic": "~0.1.8"
